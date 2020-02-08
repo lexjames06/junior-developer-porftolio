@@ -1,0 +1,19 @@
+.background {
+    height: 80vh;
+    background-image: url('../../assets/images/background.jpg');
+    background-attachment: fixed;
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+  
+.title {
+    text-align: center;
+}
+  
+#nickname {
+    font-size: 50px;
+    margin: 15px 0 -10px 0;
+    color: goldenrod;
+}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import MobileMenuButton from './frontend/components/MobileMenuButton/MobileMenuButton'
 import MobileMenu from './frontend/components/MobileMenu/MobileMenu'
+import Background from './frontend/components/Background/Background'
 import './App.css';
 
 function App() {
@@ -25,19 +26,6 @@ function App() {
         toggleMenuVisible={() => toggleMenuVisible()}
         darkMode={darkMode}
       />
-    </div>
-  );
-}
-
-function Background() {
-  return (
-    <div>
-      <div className='background'>
-      </div>
-      <div className='title'>
-        <h1 id='nickname'>LJ</h1>
-        <h1 id='job'>Junior Developer</h1>
-      </div>
     </div>
   );
 }
