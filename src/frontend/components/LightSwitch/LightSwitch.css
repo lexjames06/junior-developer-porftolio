@@ -1,0 +1,57 @@
+.Toggle {
+    top: 20px;
+    left: 10px;
+    width: 80px;
+    background-color: white;
+    border: 2px solid #282c34;
+    transition: ease 0.3s;
+  }
+  
+  .ToggleDark {
+    background-color: #282c34;
+    border: 2px solid white;
+  }
+  
+  .Switch {
+    top: 0px;
+    left: 40px;
+    width: 40px;
+    background-color: #282c34;
+    opacity: 1;
+    transition: ease 0.3s;
+  }
+  
+  .SwitchOff {
+    left: 0px;
+    background-color: rgb(218, 218, 218);
+  }
+  
+  .Toggle, .Switch {
+    position: absolute;
+    height: 40px;
+    border-radius: 40px;
+  }
+  
+  .LightSwitchIcons {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  
+  .Sun {
+    flex: 1;
+  }
+  
+  #Sun {
+    height: 25px;
+    padding: 7px;
+  }
+  
+  .Moon {
+    flex: 1;
+  }
+  
+  #Moon {
+    height: 25px;
+    padding: 7px;
+  }

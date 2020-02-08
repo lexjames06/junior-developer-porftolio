@@ -1,0 +1,44 @@
+.hamburger {
+    position: absolute;
+    right: 20px;
+    top: 22.5px;
+    min-height: 35px;
+    min-width: 50px;
+  }
+  
+  .hamburger-top {
+  
+  }
+  
+  .hamburger-middle {
+    margin-top: 14px;
+  }
+  
+  .hamburger-bottom {
+    margin-top: 28px;
+  }
+  
+  .hamburger-top, .hamburger-middle, .hamburger-bottom {
+    position: absolute;
+    height: 7px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: #282c34;
+    transition: ease 0.3s;
+  }
+  
+  .middle-rotate {
+    transform: rotate(45deg);
+  }
+  
+  .middle-rotate-anti {
+    transform: rotate(-45deg);
+  }
+  
+  .bun-leave {
+    transform: translateX(200%);
+  }
+  
+  .hamburger-dark {
+    background-color: white;
+  }

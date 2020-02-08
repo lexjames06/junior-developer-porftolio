@@ -1,24 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import MobileMenuButton from './frontend/components/MobileMenuButton/MobileMenuButton'
+import MobileMenu from './frontend/components/MobileMenu/MobileMenu'
 import './App.css';
 
 function App() {
+  
+  let [darkMode, setDarkMode] = useState(false);
+  let [menuVisible, setMenuVisible] = useState(false);
+
+  function toggleDarkMode() {
+    setDarkMode(!darkMode);
+  }
+
+  function toggleMenuVisible() {
+    setMenuVisible(!menuVisible);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`app${darkMode ? ' app-dark' : '' }`}>
+      <MobileMenu menuVisible={menuVisible} darkMode={darkMode} toggleDarkMode={() => toggleDarkMode()} />
+      <MobileMenuButton
+        menuVisible={menuVisible}
+        toggleMenuVisible={() => toggleMenuVisible()}
+        darkMode={darkMode}
+      />
     </div>
   );
 }

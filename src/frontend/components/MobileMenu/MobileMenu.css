@@ -1,0 +1,61 @@
+.menu {
+    text-align: center;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    transition: ease 1s;
+    transform: translateX(100%);
+}
+
+.menu-visible {
+    transform: translateX(10%);
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.7);
+}
+
+.menu-dark {
+    background-color: #282c34;
+}
+
+.menu-visible.menu-dark {
+    box-shadow: -10px 10px 10px rgba(255, 255, 255, 0.7);
+}
+
+.menu-links {
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 20vh;
+    transition: ease 0.3s;
+    color: #282c34;
+}
+
+.email {
+    color: #282c34;
+    transition: ease 0.3s;
+}
+
+.email-dark {
+    color: white;
+}
+
+a {
+    transition: ease 0.3s;
+    text-decoration: none;
+}
+
+.menu-links-dark {
+    color: white;
+}
+
+.menu-link {
+    font-size: 30px;
+}
+
+.menu-links a:visited {
+    color: #282c34;
+}
+
+.menu-links-dark a:visited {
+    color: white;
+}
