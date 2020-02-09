@@ -23,20 +23,24 @@
     height: 7px;
     width: 50px;
     border-radius: 10px;
-    background-color: #282c34;
-    transition: ease 0.3s;
+    background-color: white;
+    transition: ease 0.5s;
+    transition-delay: 800ms;
   }
   
   .middle-rotate {
     transform: rotate(45deg);
+    background-color: #282c34;
   }
   
   .middle-rotate-anti {
     transform: rotate(-45deg);
+    background-color: #282c34;
   }
   
   .bun-leave {
     transform: translateX(200%);
+    background-color: #282c34;
   }
   
   .hamburger-dark {
