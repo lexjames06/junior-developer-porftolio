@@ -20,7 +20,7 @@ function App() {
   return (
     <div className={`app${darkMode ? ' app-dark' : '' }`}>
       <div className='hide-overflow'>
-        <Background />
+        <Background darkMode={darkMode} />
         <MobileMenu menuVisible={menuVisible} darkMode={darkMode} toggleDarkMode={() => toggleDarkMode()} />
         <MobileMenuButton
           menuVisible={menuVisible}

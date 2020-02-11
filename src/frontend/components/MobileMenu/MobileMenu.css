@@ -16,7 +16,7 @@
 }
 
 .menu-dark {
-    background-color: #282c34;
+    background-color: black;
 }
 
 .menu-visible.menu-dark {
@@ -28,13 +28,13 @@
     height: 80vh;
     flex-direction: column;
     justify-content: space-evenly;
-    padding-top: 20vh;
+    padding-top: 10vh;
     transition: ease 0.3s;
-    color: #282c34;
+    color: black;
 }
 
 .email {
-    color: #282c34;
+    color: black;
     transition: ease 0.3s;
 }
 
@@ -52,11 +52,11 @@ a {
 }
 
 .menu-link {
-    font-size: 30px;
+    font-size: 5vw;
 }
 
 .menu-links a:visited {
-    color: #282c34;
+    color: black;
 }
 
 .menu-links-dark a:visited {

@@ -5,16 +5,18 @@ import './LightSwitch.css'
 
 export default function LightSwitch({ darkMode, toggleDarkMode }) {
     return (
-      <div className={`Toggle ${darkMode ? 'ToggleDark' : '' }`} onClick={toggleDarkMode}>
-        <div className='LightSwitchIcons'>
-          <div className='Sun'>
-            <img id='Sun' src={sun} alt='' />
+      <div className='ToggleContainer'>
+        <div className={`Toggle ${darkMode ? 'ToggleDark' : '' }`} onClick={toggleDarkMode}>
+          <div className='LightSwitchIcons'>
+            <div className='Sun'>
+              <img id='Sun' src={sun} alt='' />
+            </div>
+            <div className='Moon'>
+              <img id='Moon' src={moon} alt='' />
+            </div>
           </div>
-          <div className='Moon'>
-            <img id='Moon' src={moon} alt='' />
-          </div>
+          <div className={`Switch ${darkMode ? 'SwitchOff' : '' }`}></div>
         </div>
-        <div className={`Switch ${darkMode ? 'SwitchOff' : '' }`}></div>
       </div>
     );
 }

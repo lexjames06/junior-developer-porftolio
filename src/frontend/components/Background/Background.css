@@ -5,15 +5,160 @@
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
   
 .title {
     text-align: center;
+    height: 15vh;
+    /* background-color: red; */
 }
   
+#name {
+    font-size: 7vw;
+}
+
 #nickname {
-    font-size: 50px;
+    font-size: 10vw;
     margin: 15px 0 -10px 0;
     color: goldenrod;
+}
+
+#job {
+    font-size: 6vw;
+    color: goldenrod
+}
+
+.white-transition {
+    position: absolute;
+    top: 60vh;
+    transition: ease 1s;
+}
+
+.gold-transition {
+    position: relative;
+    top: 15vh;
+}
+
+.gold-transition, .white-transition {
+    height: 10vh;
+    width: 100vw;
+}
+
+#white-transition, #gold-transition {
+    height: 100%;
+    width: 100%;
+}
+
+.projects {
+    height: 100vh;
+    background-color: goldenrod;
+    margin-top: 14.9vh;
+}
+
+.web-title {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 5vw;
+    color: black;
+}
+
+#web-name {
+    font-size: 3vw;
+}
+
+#web-nickname {
+    font-size: 4vw;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+#web-job {
+    font-size: 3vw;
+    margin-top: -20px;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+.underline {
+    position: relative;
+    height: 0.5vh;
+    width: 90%;
+    background-color: black;
+    margin-left: 5%;
+}
+
+.stack-icons {
+    visibility: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.stack-icons-mobile {
+    visibility: visible;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#icon-label {
+    margin-top: -3px;
+    font-size: 4vw;
+}
+
+@media (min-width: 700px) {
+    .gold-transition {
+        top: 24vh;
+    }
+
+    .projects {
+        margin-top: 23.9vh;
+    }
+}
+
+@media (min-width: 1050px) {
+    .background {
+        height: 90vh;
+    }
+
+    .title {
+        visibility: hidden;
+    }
+
+    #white-transition {
+        visibility: hidden;
+    }
+
+    .gold-transition {
+        position: absolute;
+        top: 80vh;
+    }
+
+    .projects {
+        position: absolute;
+        top: 90vh;
+        width: 100vw;
+        margin-top: -0.1vh;
+    }
+
+    .web-title {
+        visibility: visible;
+    }
+
+    .stack-icons {
+        visibility: visible;
+    }
+
+    .stack-icons-mobile {
+        visibility: hidden;
+    }
+
+    .underline {
+        width: 100%;
+        margin-top: -20px;
+    }
 }
