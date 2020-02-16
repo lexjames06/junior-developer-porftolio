@@ -1,0 +1,64 @@
+.title {
+    text-align: center;
+    height: auto;
+    background-color: white;
+    transition: ease;
+}
+  
+#name {
+    font-size: 7vw;
+    margin: 0;
+}
+
+#nickname {
+    font-size: 10vw;
+    margin: 15px 0 -10px 0;
+    color: goldenrod;
+}
+
+#job {
+    font-size: 6vw;
+    color: goldenrod
+}
+
+.white-transition {
+    position: absolute;
+    top: 60vh;
+    transition: ease 1s;
+}
+
+.gold-transition {
+    position: relative;
+    top: 0vh;
+}
+
+.gold-transition, .white-transition {
+    height: 10vh;
+    width: 100vw;
+}
+.underline {
+    position: relative;
+    height: 0.5vh;
+    width: 90%;
+    background-color: black;
+    margin-left: 5%;
+}
+.stack-icons-mobile {
+    visibility: visible;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+    text-align: center;
+}
+#icon-label {
+    margin-top: -3px;
+    font-size: 4vw;
+}
+
+.title-dark {
+    background-color: black;
+}
+
+.underline-dark {
+    background-color: white;
+}

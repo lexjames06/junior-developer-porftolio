@@ -1,0 +1,26 @@
+#web-name {
+    font-size: 3vw;
+}
+
+#web-nickname {
+    font-size: 4vw;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+#web-job {
+    font-size: 3vw;
+    margin-top: -20px;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+
+
+.stack-icons {
+    visibility: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+    text-align: center;
+}

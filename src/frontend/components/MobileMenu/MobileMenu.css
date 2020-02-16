@@ -1,5 +1,5 @@
 .menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     text-align: center;
@@ -8,6 +8,13 @@
     width: 100vw;
     transition: ease 1s;
     transform: translateX(100%);
+}
+
+.close-menu {
+    height: 100vh;
+    width: 10vw;
+    position: fixed;
+    margin-left: -10vw;
 }
 
 .menu-visible {
@@ -60,4 +67,9 @@ a {
 
 #menu-link-dark {
     color: white;
+}
+
+.email-link {
+    height: 100%;
+    margin: auto;
 }

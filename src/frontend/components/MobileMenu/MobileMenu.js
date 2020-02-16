@@ -1,14 +1,17 @@
 import React from 'react'
 import LightSwitch from '../LightSwitch/LightSwitch'
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { toggleMenuVisibility } from '../../redux/actions'
 import './MobileMenu.css'
 
 export default function MobileMenu() {
   const darkMode = useSelector(state => state.darkMode);
   const isMenuVisible = useSelector(state => state.menuVisible);
+  const dispatch = useDispatch();
 
     return (
       <div className={`menu${isMenuVisible ? ' menu-visible' : '' }${darkMode ? ' menu-dark' : '' }`}>
+        <div className='close-menu' onClick={() => isMenuVisible ? dispatch(toggleMenuVisibility()) : ''}></div>
         <LightSwitch />
         <div className='menu-links'>
           <div className={`menu-link${darkMode ? ' menu-link-dark' : '' }`}>
@@ -17,6 +20,7 @@ export default function MobileMenu() {
               href='mailto: ajs.stewart@btinternet.com' 
               rel="noopener noreferrer" 
               id={`${darkMode ? 'menu-link-dark' : 'menu-link'}`}
+              onClick={() => dispatch(toggleMenuVisibility())}
             >
               Email
             </a>
@@ -27,6 +31,7 @@ export default function MobileMenu() {
               href='https://github.com/lexjames06' 
               rel="noopener noreferrer"
               id={`${darkMode ? 'menu-link-dark' : 'menu-link'}`}
+              onClick={() => dispatch(toggleMenuVisibility())}
             >
               Github
             </a>
