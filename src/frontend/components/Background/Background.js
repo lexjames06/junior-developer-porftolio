@@ -7,8 +7,6 @@ import { toggleMenuVisibility } from '../../redux/actions'
 import './Background.css'
 
 export default function Background() {
-    const isMenuVisible = useSelector(state => state.menuVisibility);
-    const dispatch = useDispatch();
 
     return (
         <div>
