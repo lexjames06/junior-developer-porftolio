@@ -1,32 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import MobileMenuButton from './frontend/components/MobileMenuButton/MobileMenuButton'
 import MobileMenu from './frontend/components/MobileMenu/MobileMenu'
 import Background from './frontend/components/Background/Background'
+import { useSelector } from 'react-redux';
 import './App.css';
 
 function App() {
-  
-  let [darkMode, setDarkMode] = useState(false);
-  let [menuVisible, setMenuVisible] = useState(false);
 
-  function toggleDarkMode() {
-    setDarkMode(!darkMode);
-  }
-
-  function toggleMenuVisible() {
-    setMenuVisible(!menuVisible);
-  }
+  const darkMode = useSelector(state => state.darkMode);
 
   return (
     <div className={`app${darkMode ? ' app-dark' : '' }`}>
       <div className='hide-overflow'>
-        <Background darkMode={darkMode} />
-        <MobileMenu menuVisible={menuVisible} darkMode={darkMode} toggleDarkMode={() => toggleDarkMode()} />
-        <MobileMenuButton
-          menuVisible={menuVisible}
-          toggleMenuVisible={() => toggleMenuVisible()}
-          darkMode={darkMode}
-        />
+        <Background />
+        <MobileMenu />
+        <MobileMenuButton />
       </div>
     </div>
   );

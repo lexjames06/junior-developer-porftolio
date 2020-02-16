@@ -30,16 +30,6 @@
     justify-content: space-evenly;
     padding-top: 10vh;
     transition: ease 0.3s;
-    color: black;
-}
-
-.email {
-    color: black;
-    transition: ease 0.3s;
-}
-
-.email-dark {
-    color: white;
 }
 
 a {
@@ -47,19 +37,27 @@ a {
     text-decoration: none;
 }
 
-.menu-links-dark {
-    color: white;
-}
-
 .menu-link {
-    color: white;
     font-size: 8vw;
-}
-
-.menu-links a:visited {
     color: black;
 }
 
-.menu-links-dark a:visited {
+.menu-link-dark {
+    color: white;
+}
+
+.menu-link a:visited {
+    color: black;
+}
+
+.menu-link-dark a:visited {
+    color: white;
+}
+
+#menu-link {
+    color: black;
+}
+
+#menu-link-dark {
     color: white;
 }

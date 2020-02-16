@@ -126,7 +126,7 @@
     }
 
     .title {
-        visibility: hidden;
+        display: none;
     }
 
     #white-transition {
@@ -151,6 +151,7 @@
 
     .stack-icons {
         visibility: visible;
+        width: 100%;
     }
 
     .stack-icons-mobile {

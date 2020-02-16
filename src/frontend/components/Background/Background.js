@@ -6,9 +6,12 @@ import javascript from '../../assets/icons/javascript.svg'
 import html from '../../assets/icons/html.svg'
 import css from '../../assets/icons/css.svg'
 import react from '../../assets/icons/react.svg'
+import { useSelector } from 'react-redux';
 import './Background.css'
 
-export default function Background({ darkMode }) {
+export default function Background() {
+    const darkMode = useSelector(state => state.darkMode);
+
     return (
         <div>
             <div className='background'>
