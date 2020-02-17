@@ -21,7 +21,7 @@ export default function MobileTitle() {
             <h1 id='job'>Junior Developer</h1>
             <div className='underline'></div>
             <div className='stack-icons-mobile'>
-                    <span><img src={html} alt='' /><h3 id='icon-label'>HMTL5</h3></span>
+                    <span><img src={html} alt='' /><h3 id='icon-label'>HTML5</h3></span>
                     <span><img src={css} alt='' /><h3 id='icon-label'>CSS3</h3></span>
                     <span><img src={javascript} alt='' /><h3 id='icon-label'>JavaScript</h3></span>
                     <span><img src={react} alt='' /><h3 id='icon-label'>React</h3></span>

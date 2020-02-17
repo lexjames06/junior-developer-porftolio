@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import MobileTitle from '../MobileTitle/MobileTitle'
 import WebTitle from '../WebTitle/WebTitle'
 import backgroundImage from '../../assets/images/background.jpg'
-import { useSelector, useDispatch } from 'react-redux';
-import { toggleMenuVisibility } from '../../redux/actions'
+import Projects from '../Projects/Projects'
 import './Background.css'
 
 export default function Background() {
@@ -19,7 +18,7 @@ export default function Background() {
                 <WebTitle />
             </div>
             <MobileTitle />
-            <div className='projects'></div>
+            <Projects />
         </div>
     );
 }

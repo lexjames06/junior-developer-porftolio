@@ -9,3 +9,9 @@ export const toggleMenuVisibility = () => {
         type: 'TOGGLEMENUVISIBILITY'
     };
 };
+
+export const toggleKodflixDetails = () => {
+    return {
+        type: 'TOGGLEKODFLIXDETAILS'
+    };
+};

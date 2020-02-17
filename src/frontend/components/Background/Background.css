@@ -24,12 +24,6 @@
     width: 100%;
 }
 
-.projects {
-    height: 100vh;
-    background-color: goldenrod;
-    margin-top: -0.3vh;
-}
-
 .web-title {
     visibility: hidden;
     position: absolute;
