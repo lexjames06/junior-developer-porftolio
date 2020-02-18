@@ -26,6 +26,7 @@
 }
 
 .project img {
+    display: block;
     height: 100%;
     width: 100%;
 }
@@ -36,7 +37,6 @@
     background-color: white;
     transform: translateY(-10%);
     transition: ease 0.3s;
-    margin-top: -4px;
 }
 
 .project-details h3 {

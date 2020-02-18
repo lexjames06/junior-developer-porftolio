@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import './Projects.css'
 
-import kodflix from '../../assets/projects/kodflix.png'
+import kodflix from '../../assets/projects/kodflix.jpg'
 
 export default function Projects() {
     const [kodflixDetailsVisible, setKodflixDetailsVisible] = useState(false);
@@ -23,7 +23,7 @@ export default function Projects() {
         //     technologies: 'JavaScript, React, NodeJS, HTML5, CSS3'
         // }
     ];
-    
+
     return (
         <div className='projects-container'>
             <h1>Projects</h1>
