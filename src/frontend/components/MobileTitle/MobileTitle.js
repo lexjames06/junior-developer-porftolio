@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import pictureTransition from '../../assets/transitions/picture-transition.png'
-import pictureTransitionDark from '../../assets/transitions/picture-transition-dark.png'
+import pictureTransitionDark from '../../assets/transitions/picture-transition-black.png'
 import goldTransition from '../../assets/transitions/transition.png'
 import javascript from '../../assets/icons/javascript.svg'
 import html from '../../assets/icons/html.svg'
@@ -14,8 +14,8 @@ export default function MobileTitle() {
 
     return (
         <div className={`title${darkMode ? ' title-dark' : ''}`}>
-            <div className='gold-transition'>
-                <img id='gold-transition' src={`${darkMode ? pictureTransitionDark : pictureTransition}`} alt='' />
+            <div className='picture-transition'>
+                <img id='picture-transition' src={`${darkMode ? pictureTransitionDark : pictureTransition}`} alt='' />
             </div>
             <h1 id='name'>Alexander '<span id='nickname'>LJ</span>' Stewart</h1>
             <h1 id='job'>Junior Developer</h1>
@@ -25,9 +25,6 @@ export default function MobileTitle() {
                     <span><img src={css} alt='' /><h3 id='icon-label'>CSS3</h3></span>
                     <span><img src={javascript} alt='' /><h3 id='icon-label'>JavaScript</h3></span>
                     <span><img src={react} alt='' /><h3 id='icon-label'>React</h3></span>
-            </div>
-            <div className='white-transition'>
-                <img id='white-transition' src={goldTransition} alt='' />
             </div>
         </div>
     );

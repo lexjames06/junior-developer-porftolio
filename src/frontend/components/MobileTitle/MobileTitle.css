@@ -8,7 +8,7 @@
 
 .title-dark {
     color: white;
-    background-color: #202020;
+    background-color: black;
 }
   
 #name {
@@ -27,21 +27,15 @@
     color: rgb(34, 172, 96)
 }
 
-.gold-transition {
+.picture-transition img {
+    display: block;
     position: absolute;
     top: 60vh;
     transition: ease 1s;
-}
-
-.white-transition {
-    position: relative;
-    top: 0vh;
-}
-
-.white-transition, .gold-transition {
     height: 10vh;
     width: 100vw;
 }
+
 .underline {
     position: relative;
     height: 0.5vh;

@@ -16,7 +16,6 @@ function App() {
         <Header />
         <Background />
         <MobileMenu />
-        {/* <MobileMenuButton /> */}
       </div>
     </div>
   );

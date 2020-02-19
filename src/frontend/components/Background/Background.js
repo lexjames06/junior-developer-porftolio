@@ -3,6 +3,7 @@ import MobileTitle from '../MobileTitle/MobileTitle'
 import WebTitle from '../WebTitle/WebTitle'
 import backgroundImage from '../../assets/images/background.jpg'
 import Projects from '../Projects/Projects'
+import AboutMe from '../AboutMe/AboutMe'
 import './Background.css'
 
 export default function Background() {
@@ -30,6 +31,7 @@ export default function Background() {
                 <WebTitle />
             </div>
             <MobileTitle />
+            <AboutMe />
             <Projects />
         </div>
     );

@@ -1,0 +1,44 @@
+.about-me-outer-container {
+    width: 100vw;
+    height: auto;
+    background-color: white;
+}
+
+.about-me-outer-container.dark {
+    background-color: black;
+}
+
+.about-me-transition img {
+    display: block;
+    height: 10vh;
+    width: 100vw;
+}
+
+.about-me-inner-container {
+    height: auto;
+    width: 100vw;
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.about-me-inner-container h1 {
+    color: rgb(34, 172, 96);
+    text-align: center;
+    margin: 0;
+    padding-top: 5%;
+    padding-bottom: 15%;
+}
+
+.about-me-inner-container p {
+    color: white;
+    padding: 0 15%;
+    text-align: center;
+}
+
+.about-me-inner-container img {
+    width: 15%;
+    align-self: center;
+    padding-bottom: 10%;
+}

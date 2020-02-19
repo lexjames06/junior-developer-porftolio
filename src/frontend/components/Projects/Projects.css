@@ -22,7 +22,7 @@
     height: 50%;
     background-color: green;
     overflow: hidden;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 10px;
 }
 
@@ -95,4 +95,17 @@
 
 .project-details-clicked .triangle {
     transform: rotate(180deg);
+}
+
+.green-transition img {
+    display: block;
+    position: relative;
+    height: 10vh;
+    width: 100%;
+}
+
+.projects-outer-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #202020;
 }
