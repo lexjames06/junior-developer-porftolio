@@ -76,6 +76,7 @@
     justify-content: center;
     transition: ease 0.3s;
     z-index: 1;
+    border-radius: 10px;
 }
 
 .triangle {
