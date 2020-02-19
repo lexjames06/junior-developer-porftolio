@@ -1,9 +1,9 @@
 .ToggleContainer {
   position: absolute;
-  left: 4vw;
-  top: 2.5vh;
-  width: 22vh;
-  height: 6vh;
+  right: 14vw;
+  top: 3vh;
+  width: 10vh;
+  height: 4vh;
   max-height: 50px;
   max-width: 100px;
 }
@@ -19,7 +19,7 @@
   }
   
   .ToggleDark {
-    background-color: black;
+    background-color: rgb(24, 172, 96);
     border: 2px solid white;
   }
   
@@ -51,7 +51,7 @@
   
   #Sun, #Moon {
     height: 70%;
-    padding-top: 15%;
+    padding-top: 10%;
   }
 
   .Sun, .Moon {

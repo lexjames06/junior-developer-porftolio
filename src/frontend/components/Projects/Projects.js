@@ -7,6 +7,8 @@ import kodflix from '../../assets/projects/kodflix.jpg'
 export default function Projects() {
     const [kodflixDetailsVisible, setKodflixDetailsVisible] = useState(false);
 
+    const darkMode = useSelector(state => state.darkMode);
+
     function toggleKodflixDetails() {
         setKodflixDetailsVisible(!kodflixDetailsVisible);
     }
@@ -14,7 +16,7 @@ export default function Projects() {
     let projects = [
         { 
             name: 'Kodflix', 
-            description: "A Psuedo netflix web-application showing different clickable movie covers. Each movie has it's own page with details and a trailer.",
+            description: "A Pseudo netflix web-application showing different clickable movie covers. Each movie has it's own page with details and a trailer.",
             technologies: 'JavaScript, React, NodeJS, HTML5, CSS3'
         },
         // { 
@@ -25,7 +27,7 @@ export default function Projects() {
     ];
 
     return (
-        <div className='projects-container'>
+        <div className={`projects-container${darkMode ? ' dark' : ''}`}>
             <h1>Projects</h1>
             {
                 projects.map(({ name, description, technologies }) => (

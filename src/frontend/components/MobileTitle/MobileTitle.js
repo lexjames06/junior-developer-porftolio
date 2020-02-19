@@ -14,8 +14,8 @@ export default function MobileTitle() {
 
     return (
         <div className={`title${darkMode ? ' title-dark' : ''}`}>
-            <div className='white-transition'>
-                <img id='white-transition' src={`${darkMode ? pictureTransitionDark : pictureTransition}`} alt='' />
+            <div className='gold-transition'>
+                <img id='gold-transition' src={`${darkMode ? pictureTransitionDark : pictureTransition}`} alt='' />
             </div>
             <h1 id='name'>Alexander '<span id='nickname'>LJ</span>' Stewart</h1>
             <h1 id='job'>Junior Developer</h1>
@@ -26,8 +26,8 @@ export default function MobileTitle() {
                     <span><img src={javascript} alt='' /><h3 id='icon-label'>JavaScript</h3></span>
                     <span><img src={react} alt='' /><h3 id='icon-label'>React</h3></span>
             </div>
-            <div className='gold-transition'>
-                <img id='gold-transition' src={goldTransition} alt='' />
+            <div className='white-transition'>
+                <img id='white-transition' src={goldTransition} alt='' />
             </div>
         </div>
     );

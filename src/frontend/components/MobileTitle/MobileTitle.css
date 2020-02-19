@@ -2,7 +2,13 @@
     text-align: center;
     height: auto;
     background-color: white;
+    color: #202020;
     transition: ease;
+}
+
+.title-dark {
+    color: white;
+    background-color: #202020;
 }
   
 #name {
@@ -13,26 +19,26 @@
 #nickname {
     font-size: 10vw;
     margin: 15px 0 -10px 0;
-    color: goldenrod;
+    color: rgb(34, 172, 96);
 }
 
 #job {
     font-size: 6vw;
-    color: goldenrod
+    color: rgb(34, 172, 96)
 }
 
-.white-transition {
+.gold-transition {
     position: absolute;
     top: 60vh;
     transition: ease 1s;
 }
 
-.gold-transition {
+.white-transition {
     position: relative;
     top: 0vh;
 }
 
-.gold-transition, .white-transition {
+.white-transition, .gold-transition {
     height: 10vh;
     width: 100vw;
 }
@@ -40,7 +46,7 @@
     position: relative;
     height: 0.5vh;
     width: 90%;
-    background-color: black;
+    background-color: #202020;
     margin-left: 5%;
 }
 .stack-icons-mobile {
@@ -55,10 +61,6 @@
     font-size: 4vw;
 }
 
-.title-dark {
+.project-dark {
     background-color: black;
-}
-
-.underline-dark {
-    background-color: white;
 }

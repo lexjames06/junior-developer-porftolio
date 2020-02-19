@@ -1,0 +1,19 @@
+.header-container {
+    height: 5vh;
+    width: 100vw;
+    background-color: rgb(34, 172, 96);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: ". name menuButton";
+}
+
+.header-container h3 {
+    margin: 0 auto;
+    grid-area: name;
+    color: #202020;
+    align-self: center;
+}
+

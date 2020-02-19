@@ -4,39 +4,115 @@
     left: 0;
     text-align: center;
     background-color: white;
-    height: 100vh;
+    top: 5vh;
+    height: 95vh;
     width: 100vw;
     transition: ease 1s;
     transform: translateX(100%);
 }
 
-.close-menu {
+.sidebar-close-menu {
     height: 100vh;
     width: 10vw;
     position: fixed;
     margin-left: -10vw;
 }
 
+.menu-personal-details-container {
+    height: 20vh;
+    display: grid;
+    text-align: left;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "picture ."
+    "picture name"
+    "picture job";
+}
+
+.headshot {
+    grid-area: picture;
+    max-height: 90px;
+    max-width: 90px;
+    border: 4px solid rgb(34, 172, 96);
+    border-radius: 50%;
+    margin: auto auto;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+#headshot {
+    height: 110%;
+    width: 110%;
+}
+
+.menu-personal-title {
+    grid-area: name;
+    align-self: flex-end;
+    color: #202020;
+    transition: ease 0.3s;
+}
+
+.menu-personal-title-dark {
+    color: white;
+}
+
+.menu-personal-title h3 {
+    margin: 0;
+}
+
+.menu-personal-job {
+    grid-area: job;
+    align-self: flex-start;
+    color: rgb(150, 150, 150);
+}
+
+.menu-personal-job h4 {
+    margin: 0;
+}
+
 .menu-visible {
     transform: translateX(10%);
-    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.7);
 }
 
 .menu-dark {
-    background-color: black;
-}
-
-.menu-visible.menu-dark {
-    box-shadow: -10px 10px 10px rgba(255, 255, 255, 0.7);
+    background-color: #202020;
 }
 
 .menu-links {
     display: flex;
-    height: 80vh;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-top: 10vh;
+    display: grid;
+    height: 47vh;
     transition: ease 0.3s;
+    text-align: left;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+    "email"
+    "github"
+    "linkedin"
+    "blog"
+    "youtube";
+}
+
+.email-menu-link {
+    grid-area: email;
+}
+
+.github-menu-link {
+    grid-area: github;
+}
+
+.linkedin-menu-link {
+    grid-area: linkedin;
+}
+
+.blog-menu-link {
+    grid-area: blog;
+}
+
+.youtube-menu-link {
+    grid-area: youtube;
 }
 
 a {
@@ -44,13 +120,30 @@ a {
     text-decoration: none;
 }
 
-.menu-link {
+.menu-link h4 {
+    margin: 0;
+}
+
+.email-menu-link, 
+.github-menu-link, 
+.linkedin-menu-link, 
+.blog-menu-link, 
+.youtube-menu-link {
     font-size: 8vw;
     color: black;
+    width: 100%;
+    padding: 2vh 0;
+    border-top: 1px solid rgb(34, 172, 96);
+    display: flex;
+    align-content: center;
+}
+
+.youtube-menu-link {
+    border-bottom: 1px solid rgb(34, 172, 96);
 }
 
 .menu-link-dark {
-    color: white;
+    color: rgb(150, 150, 150);
 }
 
 .menu-link a:visited {
@@ -66,10 +159,31 @@ a {
 }
 
 #menu-link-dark {
-    color: white;
+    color: rgb(150, 150, 150);
 }
 
 .email-link {
     height: 100%;
     margin: auto;
+}
+
+.menu-logo {
+    display: grid;
+    height: 20vh;
+    width: 100%;
+    justify-content: center;
+}
+
+.menu-logo h3 {
+    align-self: center;
+    font-size: 15vw;
+    color: rgb(150, 150, 150);
+    opacity: 0.4;
+}
+
+.menu-link-icon {
+    position: relative;
+    height: 10%;
+    width: 10%;
+    margin: 0 5vw;
 }
