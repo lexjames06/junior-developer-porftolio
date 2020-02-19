@@ -89,11 +89,33 @@
     transition-delay: 0.3s;
 }
 
-.project-details-clicked {
+.project-details.dark-clicked {
     transform: translateY(-100%);
 }
 
-.project-details-clicked .triangle {
+.project-details.dark-clicked .triangle {
+    transform: rotate(180deg);
+}
+
+.project-details.clicked {
+    transform: translateY(-100%);
+    background-color: white;
+}
+
+/* .project-details .light-mode {
+    background-color: white;;
+} */
+
+.project-details.clicked .technologies,
+.project-details.clicked h3 {
+    color: black;
+}
+
+.project-details .description.light {
+    color: #22AC60;
+}
+
+.project-details.clicked .triangle {
     transform: rotate(180deg);
 }
 

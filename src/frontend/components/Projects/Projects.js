@@ -39,9 +39,9 @@ export default function Projects() {
                         <div className='project-window'>
                             <div className='project'>
                                 <img src={kodflix} alt={name} />
-                                <div className={`project-details${kodflixDetailsVisible ? ' project-details-clicked' : ''}`}>
+                                <div className={`project-details${kodflixDetailsVisible ? darkMode ? ' dark-clicked' : ' clicked' : ' light-mode'}`}>
                                     <h3>{name}</h3>
-                                    <div className='description'>
+                                    <div className={`description${darkMode ? ' dark' : ' light'}`}>
                                         {description}
                                     </div>
                                     <div className='technologies'>

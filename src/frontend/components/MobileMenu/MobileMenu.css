@@ -1,6 +1,5 @@
 .menu {
     position: fixed;
-    top: 0;
     left: 0;
     text-align: center;
     background-color: white;
@@ -82,7 +81,7 @@
 .menu-links {
     display: flex;
     display: grid;
-    height: 47vh;
+    height: auto;
     transition: ease 0.3s;
     text-align: left;
     align-items: center;
@@ -167,11 +166,12 @@ a {
     margin: auto;
 }
 
-.menu-logo {
+.menu-logo h3 {
     display: grid;
-    height: 20vh;
+    height: auto;
     width: 100%;
     justify-content: center;
+    margin: 0;
 }
 
 .menu-logo h3 {
@@ -186,4 +186,17 @@ a {
     height: 10%;
     width: 10%;
     margin: 0 5vw;
+}
+
+@media (min-width: 100px) {
+    .email-menu-link, 
+    .github-menu-link, 
+    .linkedin-menu-link, 
+    .blog-menu-link, 
+    .youtube-menu-link {
+        font-size: 40px;
+    }
+    .menu-link-icon {
+        width: 45px;
+    }
 }
