@@ -221,25 +221,11 @@ margin: 0;
 }
 
 .project-image {
-    transition: ease 0.5s;
+    transition: ease 1s;
     position: relative;
 }
 
-.project-image#fit4you {
-    transform: translateY(-100%);
-}
-
-.project-image.right#tbsw {
-    transform: translateY(-200%) translateX(100%);
-}
-
-.project-image#projectSkeleton {
-    transform: translateY(-300%);
-}
-
-
-
-
+/* project carousel logic */
 .project-image.right#kodflix {
     transform: translateX(100%) scale(0.8);
     opacity: 0;
