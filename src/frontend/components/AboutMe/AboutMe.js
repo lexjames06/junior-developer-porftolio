@@ -18,16 +18,14 @@ export default function AboutMe() {
             <div className={`about-me-inner-container${darkMode ? ' dark' : ''}`}>
                 <h1>About Me</h1>
                 <p>
-                    Since as early as I can remember, I've owned a basketball. 
-                    With a lot of hard work and commitment, 
-                    I was fortunate enough to play overseas, and even secure a scholarship
-                    to university in Florida, US.
-                    These days, I'm a fan of watching the game, 
-                    but never miss an opportunity to be involved in the basketball community.
+                    Basketball is my first love. 
+                    It has brought many tears of joy and disappointment,
+                    and even afforded me the opportunity to live in Iceland and 
+                    receive a scholarship to university in Florida. I'm also a Boston Celtics fan!
                 </p>
                 <img src={basketball} alt='basketball icon' />
                 <p>
-                    Since Aug 2018 I've been a part of a podcast with a group of friends
+                    Since Aug 2018, I've been a part of a podcast with a group of friends
                     from around the world. We discuss interesting articles in the news
                     and share our thoughts and opinions.
                 </p>
