@@ -36,8 +36,8 @@ export default function Projects() {
             </div>
             <div className={`projects-container${darkMode ? ' dark' : ''}`}>
                 <h1>Projects</h1>
-                <p id='one'>{'projects.map(({'}</p>
-                <p id='two'>{'name, description, technologies'}</p>
+                {/* <p id='one'>{'projects.map(({'}</p>
+                <p id='two'>{'name, description, technologies'}</p> */}
                 {
                     projects.map(({ name, description, technologies }) => (
                         <div className='project-window'>

@@ -18,8 +18,8 @@ export default function Background() {
         <div>
             <div className='background'>
                 <div className='background-image-outer-container'>
-                <p id='code'>{"src={'../../assets/images/"}</p>
-    <p id='code-two'>{"background.png'}"}</p>
+                    {/* <p id='code'>{"src={'../../assets/images/"}</p>
+                    <p id='code-two'>{"background.png'}"}</p> */}
                     <div className='background-image-inner-container'>
                         <img 
                             src={backgroundImage} 

@@ -30,11 +30,11 @@ export default function AboutMe() {
                     and share our thoughts and opinions.
                 </p>
                 <img src={podcast} alt='radio-mast icon' />
-                <div className='attributes'>
+                {/* <div className='attributes'>
                     <div id='code-one'>{".about-me-inner-container img {"}</div>
                     <div id='code-two'>{"width: 15%;"}</div>
                     <div id='code-three'>{"align-self: center;"}</div>
-                </div>
+                </div> */}
                 <p id='fitness-bio'>
                     After I finished playing basketball, I fell in love with health and fitness.
                     I've completed multiple Strength & Conditioning internships and become a 
