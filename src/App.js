@@ -8,6 +8,8 @@ import './App.css';
 
 function App() {
 
+  document.title = 'LJ Portfolio'
+
   const darkMode = useSelector(state => state.darkMode);
 
   return (

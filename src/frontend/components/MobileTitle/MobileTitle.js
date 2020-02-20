@@ -22,7 +22,7 @@ export default function MobileTitle() {
             </div>
             <h1 id='name'>Alexander '<span id='nickname'>LJ</span>' Stewart</h1>
             <h1 id='job'>Junior Developer</h1>
-            <div className='underline'></div>
+            <div className={`underline${darkMode ? ' dark' : ''}`}></div>
             <div className='stack-icons-mobile'>
                     <span><img src={`${darkMode ? htmlLight : html}`} alt='' /><h3 id='icon-label'>HTML5</h3></span>
                     <span><img src={`${darkMode ? cssLight : css}`} alt='' /><h3 id='icon-label'>CSS3</h3></span>

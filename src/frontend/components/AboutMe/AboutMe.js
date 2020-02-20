@@ -31,19 +31,24 @@ export default function AboutMe() {
                     from around the world. We discuss interesting articles in the news
                     and share our thoughts and opinions.
                 </p>
-                <img src={podcast} alt='basketball icon' />
-                <p>
+                <img src={podcast} alt='radio-mast icon' />
+                <div className='attributes'>
+                    <div id='code-one'>{".about-me-inner-container img {"}</div>
+                    <div id='code-two'>{"width: 15%;"}</div>
+                    <div id='code-three'>{"align-self: center;"}</div>
+                </div>
+                <p id='fitness-bio'>
                     After I finished playing basketball, I fell in love with health and fitness.
                     I've completed multiple Strength & Conditioning internships and become a 
                     qualified Personal Trainer. All for the love of it as a hobby.
                 </p>
-                <img src={fitness} alt='basketball icon' />
+                <img src={fitness} alt='heart-rate over heart icon' />
                 <p>
                     I love to solve problems!
                     Studying maths at university wasn't enough; if I can find a riddle or logic
                     problem to solve in my spare time, I will!
                 </p>
-                <img src={math} alt='basketball icon' />
+                <img src={math} alt='chalkboard icon' />
             </div>
         </div>
     );

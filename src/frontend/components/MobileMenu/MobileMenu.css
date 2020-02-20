@@ -8,6 +8,7 @@
     width: 100vw;
     transition: ease 1s;
     transform: translateX(100%);
+    z-index: 10;
 }
 
 .sidebar-close-menu {

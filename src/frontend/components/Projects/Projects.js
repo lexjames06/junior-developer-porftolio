@@ -18,7 +18,9 @@ export default function Projects() {
         { 
             name: 'Kodflix', 
             description: "A Pseudo netflix web-application showing different clickable movie covers. Each movie has it's own page with details and a trailer.",
-            technologies: 'JavaScript, React, NodeJS, HTML5, CSS3'
+            technologies: 'JavaScript, React, NodeJS, HTML5, CSS3',
+            github: '',
+
         },
         // { 
         //     name: 'Kodflix', 
@@ -34,6 +36,8 @@ export default function Projects() {
             </div>
             <div className={`projects-container${darkMode ? ' dark' : ''}`}>
                 <h1>Projects</h1>
+                <p id='one'>{'projects.map(({'}</p>
+                <p id='two'>{'name, description, technologies'}</p>
                 {
                     projects.map(({ name, description, technologies }) => (
                         <div className='project-window'>
@@ -55,6 +59,24 @@ export default function Projects() {
                         </div>
                     ))
                 }
+                <div className='project-links'>
+                    <a 
+                        target='_blank' 
+                        href='https://github.com/lexjames06/kodflix' 
+                        rel="noopener noreferrer"
+                        className='github-link'
+                    >
+                        <button><h5 id='one'>github</h5></button>
+                    </a>
+                    <a 
+                        target='_blank' 
+                        href='http://kodflix-lj.herokuapp.com/kodflix' 
+                        rel="noopener noreferrer"
+                        className='deployed-link'
+                    >
+                        <button><h5 id='two'>deployed site</h5></button>
+                    </a>
+                </div>
             </div>
         </div>
     );

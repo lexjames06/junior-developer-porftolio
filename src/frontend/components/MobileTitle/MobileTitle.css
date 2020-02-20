@@ -43,6 +43,11 @@
     background-color: #202020;
     margin-left: 5%;
 }
+
+.underline.dark {
+    background-color: white;
+}
+
 .stack-icons-mobile {
     visibility: visible;
     display: grid;

@@ -42,3 +42,48 @@
     align-self: center;
     padding-bottom: 10%;
 }
+
+.about-me-inner-container #code-one, 
+.about-me-inner-container #code-two,
+.about-me-inner-container #code-three {
+    position: relative;
+    color: #404040;
+    margin: 0;
+    padding: 0;
+    /* right: -10vw; */
+    font-size: 3vw;
+    grid-area: about;
+    text-align: center;
+    margin-left: 30vw;
+
+}
+
+.attributes {
+    display: grid;
+    margin-top: -5vh;
+    margin-bottom: 5vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "about about"
+    ". width"
+    ". align";
+}
+
+.about-me-inner-container #code-two {
+    left: 15vw;
+    grid-area: width;
+    margin: 0;
+    text-align: left;
+}
+
+.about-me-inner-container #code-three {
+    left: 15vw;
+    grid-area: align;
+    margin: 0;
+    text-align: left;
+}
+
+.about-me-inner-container p#fitness-bio {
+    margin-top: 0;
+}
