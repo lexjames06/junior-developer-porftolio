@@ -4,11 +4,27 @@ import greenTransition from '../../assets/transitions/transition.png'
 import './Projects.css'
 
 import kodflix from '../../assets/projects/kodflix.jpg'
+import fit4you from '../../assets/projects/fit-4-you.png'
+import tbsw from '../../assets/projects/tbsw.png'
+import projectSkeleton from '../../assets/projects/project-skeleton.png'
 
 export default function Projects() {
     const [kodflixDetailsVisible, setKodflixDetailsVisible] = useState(false);
+    const [projectSelected, setProjectSelected] = useState(0);
 
     const darkMode = useSelector(state => state.darkMode);
+
+    function toggleRightProjectSelected() {
+        projectSelected < 3 ?
+            setProjectSelected(projectSelected + 1) :
+            setProjectSelected(0);
+    }
+
+    function toggleLeftProjectSelected() {
+        projectSelected > 0 ?
+            setProjectSelected(projectSelected - 1) :
+            setProjectSelected(3);
+    }
 
     function toggleKodflixDetails() {
         setKodflixDetailsVisible(!kodflixDetailsVisible);
@@ -20,13 +36,29 @@ export default function Projects() {
             description: "A Pseudo netflix web-application showing different clickable movie covers. Each movie has it's own page with details and a trailer.",
             technologies: 'JavaScript, React, NodeJS, HTML5, CSS3',
             github: '',
-
+            image: kodflix
         },
-        // { 
-        //     name: 'Kodflix', 
-        //     description: "A Psuedo netflix web-application showing different clickable movie covers. Each movie has it's own page with details and a trailer.",
-        //     technologies: 'JavaScript, React, NodeJS, HTML5, CSS3'
-        // }
+        { 
+            name: 'Fit-4-You', 
+            description: "A passion project of mine, Fit-4-You will be a health and wellbeing mobile-app that gives users the most appropriate exercise and nutrition programme to meet their goals, while building sustainable habits for long term health success!",
+            technologies: 'JavaScript, React, NodeJS, HTML5, CSS3',
+            github: '',
+            image: fit4you
+        },
+        { 
+            name: 'The B-Side Word: Landing Page', 
+            description: "A simple landing page for mobile devices to redirect users from facebook marketing through to the podcast.",
+            technologies: 'JavaScript, React, NodeJS, HTML5, CSS3',
+            github: '',
+            image: tbsw
+        },
+        { 
+            name: 'Project Skeleton', 
+            description: "A mobile-app built alongside colleagues at the Kodiri Bootcamp. Project Skeleton is the early stages of an open source social content management system.",
+            technologies: 'JavaScript, React, NodeJS, HTML5, CSS3',
+            github: '',
+            image: projectSkeleton
+        }
     ];
 
     return (
@@ -36,37 +68,75 @@ export default function Projects() {
             </div>
             <div className={`projects-container${darkMode ? ' dark' : ''}`}>
                 <h1>Projects</h1>
-                {/* <p id='one'>{'projects.map(({'}</p>
-                <p id='two'>{'name, description, technologies'}</p> */}
                 {
-                    projects.map(({ name, description, technologies }) => (
                         <div className='project-window'>
                             <div className='project'>
-                                <img src={kodflix} alt={name} />
+                                <img 
+                                    src={kodflix} 
+                                    alt={projects[0].name}
+                                    id='kodflix'
+                                    className={`project-image${projectSelected === 0 ? ' middle' : projectSelected === 3 ? ' right' : projectSelected === 2 ? ' behind' : ' left'}`}
+                                />
+                                <img 
+                                    src={fit4you} 
+                                    alt={projects[1].name}
+                                    id='fit4you'
+                                    className={`project-image${projectSelected === 1 ? ' middle' : projectSelected === 0 ? ' right' : projectSelected === 3 ? ' behind' : ' left'}`}
+                                />
+                                <img 
+                                    src={tbsw} 
+                                    alt={projects[2].name}
+                                    id='tbsw'
+                                    className={`project-image${projectSelected === 2 ? ' middle' : projectSelected === 1 ? ' right' : projectSelected === 0 ? ' behind' : ' left'}`}
+                                />
+                                <img 
+                                    src={projectSkeleton} 
+                                    alt={projects[3].name}
+                                    id='projectSkeleton'
+                                    className={`project-image${projectSelected === 3 ? ' middle' : projectSelected === 2 ? ' right' : projectSelected === 1 ? ' behind' : ' left'}`}
+                                />
                                 <div className={`project-details${kodflixDetailsVisible ? darkMode ? ' dark-clicked' : ' clicked' : ' light-mode'}`}>
-                                    <h3>{name}</h3>
+                                    <h3>{projects[projectSelected].name}</h3>
                                     <div className={`description${darkMode ? ' dark' : ' light'}`}>
-                                        {description}
+                                        {projects[projectSelected].description}
                                     </div>
                                     <div className='technologies'>
-                                        <h5>{technologies}</h5>
+                                        <h5>{projects[projectSelected].technologies}</h5>
                                     </div>
-                                    <div className='project-overlay-bar' onClick={() => toggleKodflixDetails()}>
+                                    <div className='project-overlay-bar'>
                                         <div className='triangle'></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    ))
                 }
+                <div className='project-selector-buttons'>
+                    <button 
+                        className='project-selector back'
+                        onClick={toggleLeftProjectSelected}
+                    >
+                        <h1>{'<'}</h1>
+                    </button>
+                    <div className={`project-dot${projectSelected === 0 ? ' kodflix' : ''}`}></div>
+                    <div className={`project-dot${projectSelected === 1 ? ' fit-4-you' : ''}`}></div>
+                    <div className={`project-dot${projectSelected === 2 ? ' tbsw' : ''}`}></div>
+                    <div className={`project-dot${projectSelected === 3 ? ' project-skeleton' : ''}`}></div>
+                    <button 
+                        className='project-selector back'
+                        onClick={toggleRightProjectSelected}
+                    >
+                        <h1>{'>'}</h1>
+                    </button>
+                </div>
                 <div className='project-links'>
+                    <button className='details-link' onClick={() => toggleKodflixDetails()}><h5 id='details'>details</h5></button>
                     <a 
                         target='_blank' 
                         href='https://github.com/lexjames06/kodflix' 
                         rel="noopener noreferrer"
                         className='github-link'
                     >
-                        <button><h5 id='one'>github</h5></button>
+                        <button><h5 id='github'>github</h5></button>
                     </a>
                     <a 
                         target='_blank' 
@@ -74,7 +144,7 @@ export default function Projects() {
                         rel="noopener noreferrer"
                         className='deployed-link'
                     >
-                        <button><h5 id='two'>deployed site</h5></button>
+                        <button><h5 id='deployed'>live site</h5></button>
                     </a>
                 </div>
             </div>
