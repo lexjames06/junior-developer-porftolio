@@ -17,7 +17,13 @@ export default function ContactMe() {
                     I'm a passionate junior developer, 
                     based in London <br /><span>(willing to relocate)</span>, <br />waiting to hear from you!
                 </h4>
-                <img src={email} alt='email icon' />
+                <a 
+                    target='_blank' 
+                    href='mailto: ajs.stewart@btinternet.com' 
+                    rel="noopener noreferrer" 
+                >
+                    <img src={email} alt='email icon' />
+                </a>
                 <h3>ajs.stewart@btinternet.com</h3>
             </div>
         </div>
