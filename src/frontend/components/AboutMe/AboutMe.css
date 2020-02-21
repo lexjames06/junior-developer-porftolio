@@ -1,7 +1,7 @@
 .about-me-outer-container {
     width: 100vw;
     height: auto;
-    background-color: transparent;
+    background-color: white;
 }
 
 .about-me-outer-container.dark {
@@ -86,4 +86,13 @@
 
 .about-me-inner-container p#fitness-bio {
     margin-top: 0;
+}
+
+@media (min-width: 940px) {
+    .about-me-outer-container {
+        background-color: transparent;
+    }
+    .about-me-outer-container.dark {
+        background-color: transparent;
+    }
 }
