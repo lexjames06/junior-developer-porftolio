@@ -18,9 +18,6 @@ export default function WebTitle() {
                 <span className='stack-icon'><img src={javascript} alt='' /><h3 id='icon-label-web'>JavaScript</h3></span>
                 <span className='stack-icon'><img src={react} alt='' /><h3 id='icon-label-web'>React</h3></span>
             </div>
-            <div className='gold-transition'>
-                <img id='gold-transition' src={goldTransition} alt='' />
-            </div>
         </div>
     );
 }

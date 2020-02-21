@@ -1,7 +1,7 @@
 .about-me-outer-container {
     width: 100vw;
     height: auto;
-    background-color: white;
+    background-color: transparent;
 }
 
 .about-me-outer-container.dark {
