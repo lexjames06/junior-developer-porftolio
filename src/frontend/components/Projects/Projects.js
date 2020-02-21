@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import greenTransition from '../../assets/transitions/transition.png'
+import arrowDark from '../../assets/icons/arrow-dark.svg'
 import './Projects.css'
 
 import kodflix from '../../assets/projects/kodflix.jpg'
@@ -111,22 +112,24 @@ export default function Projects() {
                         </div>
                 }
                 <div className='project-selector-buttons'>
-                    <button 
+                    <div 
                         className='project-selector back'
                         onClick={toggleLeftProjectSelected}
                     >
-                        <h1>{'<'}</h1>
-                    </button>
+                        {/* <h1>{'<'}</h1> */}
+                        <img src={arrowDark} alt='right arrow' />
+                    </div>
                     <div className={`project-dot${projectSelected === 0 ? ' kodflix' : ''}`}></div>
                     <div className={`project-dot${projectSelected === 1 ? ' fit-4-you' : ''}`}></div>
                     <div className={`project-dot${projectSelected === 2 ? ' tbsw' : ''}`}></div>
                     <div className={`project-dot${projectSelected === 3 ? ' project-skeleton' : ''}`}></div>
-                    <button 
-                        className='project-selector back'
+                    <div 
+                        className='project-selector forward'
                         onClick={toggleRightProjectSelected}
                     >
-                        <h1>{'>'}</h1>
-                    </button>
+                        {/* <h1>{'>'}</h1> */}
+                        <img src={arrowDark} alt='right arrow' />
+                    </div>
                 </div>
                 <div className='project-links'>
                     <button className='details-link' onClick={() => toggleKodflixDetails()}><h5 id='details'>details</h5></button>

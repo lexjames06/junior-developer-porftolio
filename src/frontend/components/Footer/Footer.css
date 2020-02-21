@@ -1,0 +1,38 @@
+.footer-outer-container {
+    background-color: white;
+    height: auto;
+}
+
+.footer-outer-container img {
+    display: block;
+    transition: ease 1s;
+    height: 10vh;
+    width: 100vw;
+}
+
+.footer-inner-container {
+    background-color: #202020;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-outer-container.dark {
+    background-color: black;
+}
+
+.footer-inner-container h3 {
+    margin-top: -2vh;
+    color: white;
+    text-align: center;
+    padding-bottom: 2vh;
+}
+
+.footer-inner-container img {
+    width: auto;
+    height: 7vh;
+    padding: 5vh 2vh;
+    margin: 0;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}

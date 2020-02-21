@@ -3,9 +3,17 @@ import MobileMenuButtonHeader from '../MobileMenuButtonHeader/MobileMenuButtonHe
 import './Header.css'
 
 export default function Header() {
+
+    function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+    }
+
     return (
         <div className='header-container'>
-            <h3>LJ</h3>
+            <h3 onClick={scrollToTop}>LJ</h3>
             <MobileMenuButtonHeader />
         </div>
     );

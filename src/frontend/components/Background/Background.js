@@ -4,6 +4,8 @@ import WebTitle from '../WebTitle/WebTitle'
 import backgroundImage from '../../assets/images/background.jpg'
 import Projects from '../Projects/Projects'
 import AboutMe from '../AboutMe/AboutMe'
+import ContactMe from '../ContactMe/ContactMe'
+import Footer from '../Footer/Footer'
 import './Background.css'
 
 export default function Background() {
@@ -18,8 +20,6 @@ export default function Background() {
         <div>
             <div className='background'>
                 <div className='background-image-outer-container'>
-                    {/* <p id='code'>{"src={'../../assets/images/"}</p>
-                    <p id='code-two'>{"background.png'}"}</p> */}
                     <div className='background-image-inner-container'>
                         <img 
                             src={backgroundImage} 
@@ -35,6 +35,8 @@ export default function Background() {
             <MobileTitle />
             <AboutMe />
             <Projects />
+            <ContactMe />
+            <Footer />
         </div>
     );
 }

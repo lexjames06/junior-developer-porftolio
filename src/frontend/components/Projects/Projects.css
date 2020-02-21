@@ -145,7 +145,7 @@
 
 .projects-outer-container {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     background-color: #202020;
 }
 
@@ -196,10 +196,10 @@
 .project-selector {
     height: 5vh;
     width: 5vh;
-    background-color: #202020;
-    border-radius: 50%;
-    color: white;
-    border: none;
+}
+
+.project-selector.back {
+    transform: rotate(180deg);
 }
 
 .project-selector h1 {

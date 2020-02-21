@@ -1,0 +1,51 @@
+.contact-me-outer-container {
+    background-color: #22AC60;
+    height: auto;
+}
+
+.contact-me-outer-container img {
+        display: block;
+        transition: ease 1s;
+        height: 10vh;
+        width: 100vw;
+}
+
+.contact-me-inner-container {
+    background-color: white;
+    height: 100%;
+}
+
+.contact-me-inner-container h1 {
+    color: #202020;
+    text-align: center;
+    margin: 0;
+    padding-top: 5%;
+    padding-bottom: 15%;
+}
+
+.contact-me-inner-container h3 {
+    color: #202020;
+    text-align: center;
+    padding-bottom: 4vh;
+    margin-bottom: 0;
+}
+
+.contact-me-inner-container h4 {
+    color: #202020;
+    text-align: center;
+    padding: 0 13vw 5vh;
+}
+
+.contact-me-inner-container span {
+    color: #22AC60;
+}
+
+.contact-me-inner-container.dark h1,
+.contact-me-inner-container.dark h3,
+.contact-me-inner-container.dark h4 {
+    color: white;
+}
+
+.contact-me-inner-container.dark {
+    background-color: black;
+}
