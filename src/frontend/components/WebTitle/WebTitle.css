@@ -1,3 +1,17 @@
+.web-title {
+    position: relative;
+    margin-top: 13vh;
+    width: 40vw;
+}
+
+.underline-web {
+    width: 100%;
+    position: relative;
+    height: 0.5vh;
+    width: 90%;
+    background-color: #202020;
+}
+
 #web-name {
     font-size: 3vw;
 }
@@ -17,10 +31,26 @@
 
 
 
-.stack-icons {
-    visibility: hidden;
+.stack-icons-web {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 20px;
     text-align: center;
+    margin-left: -3vw;
+    margin-right: 1vw;
+}
+
+.stack-icon img {
+    width: 100%;
+}
+
+#icon-label-web {
+    font-size: 2vw;
+    margin-top: -3px;
+}
+
+@media (min-width: 940px) {
+    .web-title {
+        visibility: hidden;
+    }
 }

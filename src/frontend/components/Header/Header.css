@@ -17,3 +17,12 @@
     align-self: center;
 }
 
+@media (min-width: 940px) {
+    .header-container {
+        height: 80px;
+        position: relative;
+    }
+    .header-container h3 {
+        font-size: 50px;
+    }
+}

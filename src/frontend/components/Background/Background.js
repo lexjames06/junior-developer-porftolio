@@ -13,7 +13,9 @@ export default function Background() {
     const [viewPort, setViewPort] = useState('');
 
     function captureViewPort() {
-        setViewPort(window.innerHeight)
+        window.innerWidth < 940 ?
+        setViewPort(window.innerHeight) :
+        setViewPort('desktop');
     }
 
     return (
@@ -26,7 +28,7 @@ export default function Background() {
                             alt='background' 
                             id='background-image' 
                             onLoad={captureViewPort}
-                            style={{ height: `${viewPort ? 0.7 * viewPort : '70vh'}` }}
+                            style={{ height: `${viewPort === 'desktop' ? 'auto' : viewPort ? 0.7 * viewPort : '70vh'}` }}
                         />
                     </div>
                 </div>
