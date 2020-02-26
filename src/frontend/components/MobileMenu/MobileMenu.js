@@ -17,7 +17,9 @@ export default function MobileMenu() {
 
     return (
       <div className={`menu${isMenuVisible ? ' menu-visible' : '' }${darkMode ? ' menu-dark' : '' }`}>
-        <div className='sidebar-close-menu' onClick={() => isMenuVisible ? dispatch(toggleMenuVisibility()) : ''}></div>
+        <div 
+          className={`sidebar-close-menu${isMenuVisible ? '' : ' hidden' }`}
+          onClick={() => isMenuVisible ? dispatch(toggleMenuVisibility()) : ''}></div>
         <div className='menu-personal-details-container'>
           <div className='headshot'>
             <img src={headshot} alt='headshot' id='headshot' />

@@ -18,6 +18,10 @@
     margin-left: -10vw;
 }
 
+.sidebar-close-menu.hidden {
+    display: none;
+}
+
 .menu-personal-details-container {
     height: 20vh;
     display: grid;

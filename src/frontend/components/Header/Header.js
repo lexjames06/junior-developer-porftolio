@@ -14,7 +14,15 @@ export default function Header() {
     return (
         <div className='header-container'>
             <h3 onClick={scrollToTop}>LJ</h3>
-            <MobileMenuButtonHeader />
+            <div className='mobile-menu-visibility'>
+                <MobileMenuButtonHeader />
+            </div>
+            <div className='desktop-menu'>
+                <p className='about'>About</p>
+                <p className='projects-menu'>Projects</p>
+                <p className='contact'>Contact</p>
+                <p className='socials'>Socials</p>
+            </div>
         </div>
     );
 }

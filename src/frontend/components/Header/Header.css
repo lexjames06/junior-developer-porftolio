@@ -7,7 +7,8 @@
     z-index: 6;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: ". name menuButton";
+    grid-template-areas: 
+    ". name menuButton";
 }
 
 .header-container h3 {
@@ -17,12 +18,57 @@
     align-self: center;
 }
 
+.mobile-menu-visibility {
+    grid-area: menuButton;
+}
+
+.desktop-menu {
+    display: none;
+    grid-area: menu;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 'about projects contact socials';
+    margin-right: 2vw;
+    text-align: center;
+    grid-gap: 4vw;
+}
+
+.desktop-menu .socials,
+.desktop-menu .contact,
+.desktop-menu .about,
+.desktop-menu .projects-menu {
+    font-size: 2vw;
+}
+
+.desktop-menu .about {
+    grid-area: about;
+}
+
+.desktop-menu .projects-menu {
+    grid-area: projects;
+}
+
+.desktop-menu .contact {
+    grid-area: contact;
+}
+
+.desktop-menu .socials {
+    grid-area: socials;
+}
+
 @media (min-width: 940px) {
     .header-container {
         height: 80px;
         position: relative;
+        grid-template-areas: 'name . menu';
     }
     .header-container h3 {
         font-size: 50px;
+        margin-left: 50px;
+    }
+    .mobile-menu-visibility {
+        display: none;
+    }
+    .desktop-menu {
+        display: grid;
     }
 }
