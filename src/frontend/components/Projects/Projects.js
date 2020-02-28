@@ -85,55 +85,55 @@ export default function Projects() {
                 <img id='green-transition' src={greenTransition} alt='' />
             </div>
             <div className={`projects-container${darkMode ? ' dark' : ''}`}>
-            <a name='projects'><h1>Projects</h1></a>
+                <h1>Projects</h1>
                     {
-                            <div className='project'>
-                                <img 
-                                    src={kodflix} 
-                                    alt={projects[0].name}
-                                    id='kodflix'
-                                    className={`project-image${projectSelected === 3 ? ' right' : projectSelected === 2 ? ' super-right' : projectSelected === 1 ? ' left' : ' middle'}`}/>
-                                <img 
-                                    src={fit4you} 
-                                    alt={projects[1].name}
-                                    id='fit4you'
-                                    className={`project-image${projectSelected === 0 ? ' right' : projectSelected === 3 ? ' super-right' : projectSelected === 2 ? ' left' : ' middle'}`}/>
-                                <img 
-                                    src={tbsw} 
-                                    alt={projects[2].name}
-                                    id='tbsw'
-                                    className={`project-image${projectSelected === 1 ? ' right' : projectSelected === 0 ? ' super-right' : projectSelected === 3 ? ' left' : ' middle'}`}/>
-                                <img 
-                                    src={projectSkeleton} 
-                                    alt={projects[3].name}
-                                    id='projectSkeleton'
-                                    className={`project-image${projectSelected === 2 ? ' right' : projectSelected === 1 ? ' super-right' : projectSelected === 0 ? ' left' : ' middle'}`}/>
-                                <div className={`project-details${detailsVisible ? darkMode ? ' dark-clicked' : ' clicked' : ' light-mode'}`}>
-                                    <h3>{projects[projectSelected].name}</h3>
-                                    <div className={`description${darkMode ? ' dark' : ' light'}`}>
-                                        {projects[projectSelected].description}
-                                    </div>
-                                    <div className='technologies'>
-                                        <h5>{projects[projectSelected].technologies}</h5>
-                                    </div>
+                        <a name='projects'><div className='project'>
+                            <img 
+                                src={kodflix} 
+                                alt={projects[0].name}
+                                id='kodflix'
+                                className={`project-image${projectSelected === 3 ? ' right' : projectSelected === 2 ? ' super-right' : projectSelected === 1 ? ' left' : ' middle'}`}/>
+                            <img 
+                                src={fit4you} 
+                                alt={projects[1].name}
+                                id='fit4you'
+                                className={`project-image${projectSelected === 0 ? ' right' : projectSelected === 3 ? ' super-right' : projectSelected === 2 ? ' left' : ' middle'}`}/>
+                            <img 
+                                src={tbsw} 
+                                alt={projects[2].name}
+                                id='tbsw'
+                                className={`project-image${projectSelected === 1 ? ' right' : projectSelected === 0 ? ' super-right' : projectSelected === 3 ? ' left' : ' middle'}`}/>
+                            <img 
+                                src={projectSkeleton} 
+                                alt={projects[3].name}
+                                id='projectSkeleton'
+                                className={`project-image${projectSelected === 2 ? ' right' : projectSelected === 1 ? ' super-right' : projectSelected === 0 ? ' left' : ' middle'}`}/>
+                            <div className={`project-details${detailsVisible ? darkMode ? ' dark-clicked' : ' clicked' : ' light-mode'}`}>
+                                <h3>{projects[projectSelected].name}</h3>
+                                <div className={`description${darkMode ? ' dark' : ' light'}`}>
+                                    {projects[projectSelected].description}
                                 </div>
-                                <div className='web-project-selectors'>
-                                    <div 
-                                        className={`project-selector web-back${detailsVisible ? ' details' : ''}`}
-                                        onClick={toggleLeftProjectSelected}>
-                                        <svg viewBox="0 0 15 24">
-                                            <path d="M0,3l3.1-3L15,12L3.1,24L0,21l9-9L0,3z"/>
-                                        </svg>
-                                    </div>
-                                    <div 
-                                        className={`project-selector web-forward${detailsVisible ? ' details' : ''}`}
-                                        onClick={toggleRightProjectSelected}>
-                                        <svg viewBox="0 0 15 24">
-                                            <path d="M0,3l3.1-3L15,12L3.1,24L0,21l9-9L0,3z"/>
-                                        </svg>
-                                    </div>
+                                <div className='technologies'>
+                                    <h5>{projects[projectSelected].technologies}</h5>
                                 </div>
                             </div>
+                            <div className='web-project-selectors'>
+                                <div 
+                                    className={`project-selector web-back${detailsVisible ? ' details' : ''}`}
+                                    onClick={toggleLeftProjectSelected}>
+                                    <svg viewBox="0 0 15 24">
+                                        <path d="M0,3l3.1-3L15,12L3.1,24L0,21l9-9L0,3z"/>
+                                    </svg>
+                                </div>
+                                <div 
+                                    className={`project-selector web-forward${detailsVisible ? ' details' : ''}`}
+                                    onClick={toggleRightProjectSelected}>
+                                    <svg viewBox="0 0 15 24">
+                                        <path d="M0,3l3.1-3L15,12L3.1,24L0,21l9-9L0,3z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div></a>
                     }
                 <div className='mobile-project-selectors'>
                     <div 
