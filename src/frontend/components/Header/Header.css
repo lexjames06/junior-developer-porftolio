@@ -30,6 +30,7 @@
     margin-right: 2vw;
     text-align: center;
     grid-gap: 4vw;
+    align-self: center;
 }
 
 .desktop-menu .socials,
@@ -57,18 +58,6 @@
 
 @media (min-width: 940px) {
     .header-container {
-        height: 80px;
-        position: relative;
-        grid-template-areas: 'name . menu';
-    }
-    .header-container h3 {
-        font-size: 50px;
-        margin-left: 50px;
-    }
-    .mobile-menu-visibility {
         display: none;
-    }
-    .desktop-menu {
-        display: grid;
     }
 }

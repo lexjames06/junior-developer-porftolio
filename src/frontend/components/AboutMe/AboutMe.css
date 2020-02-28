@@ -81,6 +81,9 @@
 }
 
 @media (min-width: 940px) {
+    .about-me-inner-container h1 {
+        font-size: 4vw;
+    }
     .about-me-outer-container {
         background-color: transparent;
     }

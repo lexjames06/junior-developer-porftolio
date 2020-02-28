@@ -14,6 +14,11 @@ export default function WebTitle() {
         <div className='web-title'>
             <h1 id='web-name'>Alexander '<span id='web-nickname'>LJ</span>' Stewart</h1>
             <h1 id='web-job'>Junior Developer</h1>
+            <div className='nav-buttons'>
+                <a href='#about'><button><h2>About</h2></button></a>
+                <a href='#projects'><button><h2>Projects</h2></button></a>
+                <a href='#contact'><button><h2>Contact</h2></button></a>
+            </div>
             <div className='underline-web'></div>
             <div className='stack-icons-web'>
                 <span className='stack-icon'><img src={javascript} alt='' /><h3 id='icon-label-web'>JavaScript</h3></span>

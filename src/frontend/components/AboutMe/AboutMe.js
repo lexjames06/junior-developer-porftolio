@@ -18,7 +18,7 @@ export default function AboutMe() {
             </div>
             <div className={`about-me-inner-container${darkMode ? ' dark' : ''}`}>
                 <div className='about-me-title'>
-                    <h1>About Me</h1>
+                    <a name='about'><h1>About Me</h1></a>
                 </div>
                 <div className='coding-bio'>
                     <p>

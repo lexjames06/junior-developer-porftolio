@@ -6,7 +6,7 @@
     top: 5vh;
     height: 95vh;
     width: 100vw;
-    transition: ease 1s;
+    transition: ease 0.3s;
     transform: translateX(100%);
     z-index: 10;
 }

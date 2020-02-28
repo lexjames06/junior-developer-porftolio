@@ -10,9 +10,9 @@ export default function ContactMe() {
 
     return (
         <div className='contact-me-outer-container'>
-            <img src={`${darkMode ? blackTransition : transition}`} alt='white-transition' />
+            <img src={`${darkMode ? blackTransition : transition}`} alt='' />
             <div className={`contact-me-inner-container${darkMode ? ' dark' : ''}`}>
-                <h1>Contact Me</h1>
+            <a name='contact'><h1>Contact Me</h1></a>
                 <h4>
                     I'm a passionate junior developer, 
                     based in London <br /><span>(willing to relocate)</span>, <br />waiting to hear from you!

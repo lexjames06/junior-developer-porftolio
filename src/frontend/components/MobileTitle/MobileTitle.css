@@ -55,6 +55,14 @@
     margin-top: 20px;
     text-align: center;
 }
+
+.stack-icons-mobile.second-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 10%;
+    font-size: ;
+}
+
 #icon-label {
     margin-top: -3px;
     font-size: 4vw;

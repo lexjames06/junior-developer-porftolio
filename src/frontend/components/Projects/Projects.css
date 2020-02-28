@@ -10,11 +10,11 @@
     text-align: center;
     color: white;
     padding-bottom: 100px;
+    padding-top: 5%;
 }
 
 .projects-container h1 {
     margin-top: 0;
-    padding-top: 5%;
     padding-bottom: 15%;
 }
 
@@ -121,6 +121,7 @@
     width: 25vw;
     font-size: 4vw;
     padding: 1vh 0;
+    transition: ease 0.3s;
 }
 
 .project-links #details,
@@ -200,10 +201,10 @@
     opacity: 0;
 }
 
-.project-image.behind#fit4you,
-.project-image.behind#tbsw,
-.project-image.behind#projectSkeleton {
-    transform: translateY(-100%);
+.project-image.super-right#fit4you,
+.project-image.super-right#tbsw,
+.project-image.super-right#projectSkeleton {
+    transform: translateY(-100%) translateX(200%) scale(0.8);
     opacity: 0;
 }
 
@@ -228,7 +229,8 @@
     transform: scale(0.9)
 }
 
-.project-image.behind#kodflix {
+.project-image.super-right#kodflix {
+    transform: translateX(200%) scale(0.8);
     opacity: 0;
 }
 
@@ -255,6 +257,17 @@
 .project-selector.web-forward img {
     height: 100%;
     opacity: 0.5;
+    transition: ease 0.3s;
+}
+
+.project-selector.web-back img:hover,
+.project-selector.web-forward img:hover {
+    opacity: 1;
+}
+
+.project-links button:hover {
+    background-color: #202020;
+    color: white;
 }
 
 @media (min-width: 940px) {
@@ -262,21 +275,28 @@
         height: auto;
     }
     .projects-container h1 {
-        padding-bottom: 5%;
+        padding-bottom: 3%;
+        font-size: 4vw;
     }
     .project {
         width: 80%;
+        border-radius: 50px;
     }
     .project-links button {
-        font-size: 3vw;
-        width: 15vw;
+        font-size: 2vw;
+        width: 10vw;
         padding: 0;
+        background-color: transparent;
+        border: 2px solid #202020;
+        color: #202020;
+        margin: 0 2vw;
     }
     .project-links {
-        margin-top: 2%;
+        margin-top: 0%;
+        justify-content: center;
     }
     .project-selector-dots {
-        margin: 2% auto;
+        margin: 1% auto;
         width: 30%;
     }
     .project-selector-dots.web {
@@ -289,16 +309,36 @@
     .project-selector.web-back,
     .project-selector.web-forward {
         visibility: visible;
+        fill: white;
+        width: 3%;
+        opacity: 0.5;
+        transition: ease 0.3s;
+    }
+    .project-selector.web-back:hover,
+    .project-selector.web-forward:hover {
+        opacity: 1;
+    }
+    .project-details.clicked .project-selector.web-forward,
+    .project-details.dark-clicked .project-selector.web-forward {
+        /* left: 105.5%; */
+    }
+    .project-selector.web-forward.details,
+    .project-selector.web-forward.details,
+    .project-selector.web-back.details,
+    .project-selector.web-back.details {
+        fill: black;
+        z-index: 5;
     }
     .project-details h3 {
         font-size: 4vw;
     }
     .project-details .description {
-        font-size: 3vw;
+        font-size: 2vw;
         margin-top: 10%;
+        padding: 0 15%
     }
     .project-details .technologies {
-        font-size: 4vw;
+        font-size: 3vw;
         margin-top: 10%;
     }
     .mobile-project-selectors {

@@ -1,11 +1,11 @@
 .web-title {
     position: relative;
-    margin-top: 13vh;
-    width: 40vw;
+    margin-top: 5vh;
+    width: 30vw;
+    text-align: center;
 }
 
 .underline-web {
-    width: 100%;
     position: relative;
     height: 0.5vh;
     width: 90%;
@@ -13,20 +13,22 @@
 }
 
 #web-name {
-    font-size: 3vw;
+    font-size: 2vw;
+    margin-right: 10%;
 }
 
 #web-nickname {
-    font-size: 4vw;
+    font-size: 3vw;
     color: white;
     text-shadow: 1px 1px 3px black;
 }
 
 #web-job {
-    font-size: 3vw;
+    font-size: 2vw;
     margin-top: -20px;
     color: white;
     text-shadow: 1px 1px 3px black;
+    margin-right: 10%;
 }
 
 
@@ -36,14 +38,14 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 20px;
     text-align: center;
-    margin-left: -3vw;
+    margin-left: -2vw;
     margin-right: 1vw;
 }
 
 .stack-icons-web.second-row {
     grid-template-columns: 1fr 1fr 1fr;
     width: 80%;
-    margin: 20px 2vw;
+    margin: 20px 1.5vw;
 }
 
 .stack-icons-web.second-row img {
@@ -55,13 +57,43 @@
 }
 
 #icon-label-web {
-    font-size: 2vw;
+    font-size: 1.5vw;
     margin-top: -3px;
     margin-bottom: 0;
+}
+
+.nav-buttons {
+    display: none;
+}
+
+.nav-buttons h2 {
+    margin: 0;
+}
+
+.nav-buttons button {
+    border-radius: 30px;
+    padding: 0 10px 0 10px;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid #202020;
+    color: #202020;
+    height: 4vh;
+    transition: ease 0.3s;
+}
+
+.nav-buttons button:hover {
+    background-color: #202020;
+    color: white;
 }
 
 @media (min-width: 940px) {
     .web-title {
         visibility: hidden;
+    }
+    .nav-buttons {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 10%;
+        margin-bottom: 1vh;
     }
 }

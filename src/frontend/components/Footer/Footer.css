@@ -18,7 +18,7 @@
 }
 
 .footer-outer-container.dark {
-    background-color: black;
+    background-color: #101010;
 }
 
 .footer-inner-container h3 {
@@ -29,10 +29,11 @@
 }
 
 .footer-inner-container img {
-    width: auto;
+    width: 7vh;
     height: 7vh;
     padding: 5vh 2vh;
     margin: 0;
     transform: rotate(-90deg);
     transform-origin: 50% 50%;
+    align-self: center;
 }
