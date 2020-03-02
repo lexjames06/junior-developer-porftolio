@@ -270,6 +270,33 @@
     color: white;
 }
 
+.project .live-site-overly {
+    display: none;
+    transition: ease 0.3s;
+}
+
+.project .live-site-overly.alert {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+
+.overlay-text {
+    color: white;
+    margin: 0;
+    font-size: 4vw;
+    display: flex;
+}
+
+.overlay-text h4 {
+    align-self: center;
+}
+
 @media (min-width: 940px) {
     .projects-container {
         height: auto;
@@ -317,10 +344,6 @@
     .project-selector.web-back:hover,
     .project-selector.web-forward:hover {
         opacity: 1;
-    }
-    .project-details.clicked .project-selector.web-forward,
-    .project-details.dark-clicked .project-selector.web-forward {
-        /* left: 105.5%; */
     }
     .project-selector.web-forward.details,
     .project-selector.web-forward.details,

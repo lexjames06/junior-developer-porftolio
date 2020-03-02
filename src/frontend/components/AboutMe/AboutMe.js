@@ -22,7 +22,7 @@ export default function AboutMe() {
                 </div>
                 <div className='coding-bio'>
                     <p>
-                        Discovering coding has been a injection of passion into my life.
+                        Discovering coding has been an injection of passion into my life.
                         I haven't felt this drawn towards something since I stopped playing
                         basketball. It's something I truly enjoy learning, and look forward
                         to building a career and impactful technology!
@@ -52,7 +52,7 @@ export default function AboutMe() {
                     <p id='fitness-bio'>
                         After I finished playing basketball, I fell in love with health and fitness.
                         I've completed multiple Strength & Conditioning internships and become a 
-                        qualified Personal Trainer. All for the love of it as a hobby.
+                        qualified Personal Trainer; all for the love of it as a hobby.
                     </p>
                     <img src={fitness} alt='heart-rate over heart icon' />
                 </div>

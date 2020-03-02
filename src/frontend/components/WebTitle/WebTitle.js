@@ -1,5 +1,4 @@
 import React from 'react';
-import goldTransition from '../../assets/transitions/transition.png';
 import javascript from '../../assets/icons/javascript.svg';
 import html from '../../assets/icons/html.svg';
 import css from '../../assets/icons/css.svg';

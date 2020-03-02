@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import greenTransition from '../../assets/transitions/transition.png'
 import arrowDark from '../../assets/icons/arrow-dark.svg'
-import webArrow from '../../assets/icons/web-arrow.svg'
 import './Projects.css'
 
 import kodflix from '../../assets/projects/kodflix.jpg'
@@ -13,8 +12,16 @@ import projectSkeleton from '../../assets/projects/project-skeleton.png'
 export default function Projects() {
     const [detailsVisible, setDetailsVisible] = useState(false);
     const [projectSelected, setProjectSelected] = useState(0);
+    const [disabledSite, setDisabledSite] = useState(false);
 
     const darkMode = useSelector(state => state.darkMode);
+
+    function toggleDisabledSite() {
+        setDisabledSite(true);
+        setTimeout(() => {
+            setDisabledSite(false);
+        }, 3000)
+    }
 
     function toggleRightProjectSelected() {
         projectSelected < 3 ?
@@ -88,26 +95,29 @@ export default function Projects() {
                 <h1>Projects</h1>
                     {
                         <a name='projects'><div className='project'>
+                            <div 
+                                className={`live-site-overly${disabledSite ? ' alert' : ''}`}><div className='overlay-text'><h4>Site not deployed yet<br /><br />Source code available on Github</h4></div></div>
                             <img 
                                 src={kodflix} 
                                 alt={projects[0].name}
                                 id='kodflix'
-                                className={`project-image${projectSelected === 3 ? ' right' : projectSelected === 2 ? ' super-right' : projectSelected === 1 ? ' left' : ' middle'}`}/>
+                                className={`project-image${projectSelected === 3 ? ' right' : projectSelected === 2 ? ' super-right' : projectSelected === 1 ? ' left' : ' middle'}`} />
                             <img 
                                 src={fit4you} 
                                 alt={projects[1].name}
                                 id='fit4you'
-                                className={`project-image${projectSelected === 0 ? ' right' : projectSelected === 3 ? ' super-right' : projectSelected === 2 ? ' left' : ' middle'}`}/>
+                                className={`project-image${projectSelected === 0 ? ' right' : projectSelected === 3 ? ' super-right' : projectSelected === 2 ? ' left' : ' middle'}`} />
                             <img 
                                 src={tbsw} 
                                 alt={projects[2].name}
                                 id='tbsw'
-                                className={`project-image${projectSelected === 1 ? ' right' : projectSelected === 0 ? ' super-right' : projectSelected === 3 ? ' left' : ' middle'}`}/>
+                                className={`project-image${projectSelected === 1 ? ' right' : projectSelected === 0 ? ' super-right' : projectSelected === 3 ? ' left' : ' middle'}`} />
                             <img 
                                 src={projectSkeleton} 
                                 alt={projects[3].name}
                                 id='projectSkeleton'
-                                className={`project-image${projectSelected === 2 ? ' right' : projectSelected === 1 ? ' super-right' : projectSelected === 0 ? ' left' : ' middle'}`}/>
+                                className={`project-image${projectSelected === 2 ? ' right' : projectSelected === 1 ? ' super-right' : projectSelected === 0 ? ' left' : ' middle'}`} />
+                            
                             <div className={`project-details${detailsVisible ? darkMode ? ' dark-clicked' : ' clicked' : ' light-mode'}`}>
                                 <h3>{projects[projectSelected].name}</h3>
                                 <div className={`description${darkMode ? ' dark' : ' light'}`}>
@@ -164,10 +174,11 @@ export default function Projects() {
                     </a>
                     <a 
                         target='_blank' 
-                        href={`http://${projectSelected === 0 ? 'kodflix-lj.herokuapp.com/kodflix' : projectSelected === 1 ? 'fit-4-you.now.sh' : projectSelected === 2 ? 'www.google.com' : 'www.google.com'}`}
+                        href={`http://${projectSelected === 0 ? 'kodflix-lj.herokuapp.com/kodflix' : projectSelected === 1 ? 'fit-4-you.now.sh' : projectSelected === 3 ? 'projectskeleton.herokuapp.com' : ''}`}
                         rel="noopener noreferrer"
-                        className='deployed-link'>
-                        <button><h5 id='deployed'>live site</h5></button>
+                        className='deployed-link'
+                        onClick={projectSelected === 2 ? e => e.preventDefault() : ''}>
+                        <button onClick={projectSelected === 2 ? () => toggleDisabledSite(): ''}><h5 id='deployed'>live site</h5></button>
                     </a>
                 </div>
             </div>

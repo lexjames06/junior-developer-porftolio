@@ -1,5 +1,4 @@
 import React from 'react';
-import MobileMenuButton from './frontend/components/MobileMenuButton/MobileMenuButton'
 import MobileMenu from './frontend/components/MobileMenu/MobileMenu'
 import Background from './frontend/components/Background/Background'
 import Header from './frontend/components/Header/Header'
